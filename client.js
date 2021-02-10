@@ -23,6 +23,13 @@ const connect = function() {
   conn.write('Name: GM', () => {
     console.log('Write completed.');
   })
+  // setTimeout(() => {
+  //   conn.write("Move: up", () => {
+  // })}, 50)
+  // setInterval(() => {
+  //   conn.write("Move: up", () => {
+  // })}, 50);
+  
   return conn;
 }
 
