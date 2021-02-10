@@ -20,6 +20,9 @@ const connect = function() {
   conn.on('end', () => {
     console.log('disconnected from server');
   });
+  conn.write('Name: GM', () => {
+    console.log('Write completed.');
+  })
   return conn;
 }
 
