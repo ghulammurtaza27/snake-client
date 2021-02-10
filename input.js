@@ -21,6 +21,9 @@ const handleUserInput = (key) => {
     connection.write("Move: right", () => {
     })
   }
+  if (key === 'i') {
+    connection.write("Say: buy instant pot", () => {})
+  }
 }
 
 const setupInput = function(conn) {
